@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8189e653bb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+            <h1 class="logo">port<span>folio</span></h1>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">service</a></li>
+                <li><a href="#contact">contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+
+        </nav>
+
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>
+                Hi , I'm <span>Dipayan</span> <br> from india 
+            </h1>
+        </div>
+    </div>
+   </div>
+
+   <!-- ---------------------ABOUT---------------------- -->
+
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="profile2.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About <span>me</span></h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, voluptatem, sint assumenda facere beatae aut corrupti repellat odio et cupiditate error earum ipsam illo? Cum temporibus rerum distinctio at natus! Inventore, aliquam! Ut suscipit a nam nulla odit molestiae esse?</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick = "opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick = "opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick = "opentab('education')">Education</p>
+                </div>
+                <div class="tab-content active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing web interfaces</li>
+                        <li><span>Web developer</span>
+                        <li><span>python/c++ programmer</span>
+                    </ul>
+                </div>
+                <div class="tab-content" id="experience">
+                    <ul>
+                        <li><span>2022-2023</span><br>Internship in Oasis Infobyte</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="education">
+                    <ul>
+                        <li> <span>2021-Present</span> <br>study B.tech in Computer science & Engineering from Dr. B. C. Roy Engineering College </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+
+   <!-- --------------------------------SERVICES------------------------- -->
+
+   <div id="services">
+    <div class="container">
+        <h1>my <span>servives</span></h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt perferendis rem, officiis, facere minima porro amet, repudiandae dicta ad a at nulla accusamus?</p>
+                <a href="#">learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt perferendis rem, officiis, facere minima porro amet, repudiandae dicta ad a at nulla accusamus?</p>
+                <a href="#">learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Programming </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt perferendis rem, officiis, facere minima porro amet, repudiandae dicta ad a at nulla accusamus?</p>
+                <a href="#">learn More</a>
+            </div>
+        </div>
+    </div>
+   </div>
+
+   <!-- --------------------------contact-------------------- -->
+
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1>contact <span>me</span></h1>
+                <p> <i class="fas fa-paper-plane"></i> majumderd007@gmail.com</p>
+                <p> <i class="fas fa-phone"></i> 01234556789</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="" download class="btn btn-2">Download CV</a>
+            </div>
+            <div class="contact-right"> 
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your E-mail" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn-2">summit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright &copy; <span> Dipayan Majumder </span>. All right reserved!</p>
+    </div>
+   </div>
+
+   <script src="script1.js"></script>
+   <script src="script.js"></script>
+   
+</body>
+</html>
