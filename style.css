@@ -22,6 +22,8 @@ body{
     --secondary-color: #080808;
     --third-color: #ff004f;
     --forth-color:#ff4122;
+    --fifth-color:#262626;
+    --sixth-color:#d3d3d3;
 }
 
 .dark-theme{
@@ -29,6 +31,8 @@ body{
     --secondary-color: #fff;
     --third-color: #ff4122;
     --forth-color:#ff004f;
+    --fifth-color:#d3d3d3;
+    --sixth-color:#262626;
 }
 
 #header{
@@ -108,6 +112,7 @@ nav ul li a:hover::after{
 .header-text {
     margin-top: 20%;
     font-size: 30px;
+    
 }
 .header-text p{
     color: var(--primary-color);
@@ -127,6 +132,7 @@ nav ul li a:hover::after{
     position: absolute;
     bottom: 0;
     right: 100px;
+    
 }
 
 .img-box img{
@@ -147,7 +153,9 @@ nav ul li a:hover::after{
     left: 54%;
 }
 
-
+#header #icon{
+    font-size: 25px;
+}
 
 
 /* -------------------------about-------------------- */
@@ -167,7 +175,9 @@ nav ul li a:hover::after{
 .about-col-1 img{
     width: 100%;
     border-radius: 15px;
+    
 }
+
 .about-col-2{
     flex-basis: 60%;
 }
@@ -246,8 +256,8 @@ nav ul li a:hover::after{
     margin-top: 50px;
 }
 .services-list div{
-    color: #ffff;
-    background: #262626;
+    color: var(--primary-color);
+    background: var(--fifth-color);
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -265,7 +275,7 @@ nav ul li a:hover::after{
 }
 .services-list div a{
     text-decoration: none;
-    color: #ffff;
+    color: var(--primary-color);
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
@@ -274,6 +284,63 @@ nav ul li a:hover::after{
     background: var(--third-color);
     transform: translateY(-10px);
 }
+
+/* -------------------Projects------------------ */
+
+#projects{
+    padding: 80px 0;
+    color: var(--primary-color);
+}
+
+#projects .title{
+    font-size: 57px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+#projects .title span{
+    color: var(--third-color);
+}
+.project{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px 0;
+}
+.project-left{
+    flex-basis: 65%;
+    justify-content: center;
+    
+}
+.project-left a{
+    text-decoration: none;
+    font-size: 30px;
+    margin: 15px;
+    margin-left: 0;
+    color: #ababab;
+    display: inline-block;
+    transition: color 0.5s , transform 0.3s;
+}
+.project-left a:hover{
+    color: var(--third-color);
+    transform: translateY(-10px);
+}
+
+.project-left h1{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.project-left h4{
+    margin: 10px 0;
+}
+.project-right{
+    flex-basis: 30%;
+}
+.work img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+
 
 /* ----------------contact--------------------- */
 
@@ -341,10 +408,10 @@ form input,form textarea{
     width: 100%;
     border: 0;
     outline: none;
-    background: #262626;
+    background: var(--fifth-color);
     padding: 15px;
     margin: 15px 0;
-    color: #fff;
+    color: var(--sixth-color);
     font-size: 15px;
     border-radius: 8px;
 }
@@ -385,11 +452,19 @@ nav .fas{
         width: 400px;
     }
     .header-text{
-        margin-top: 20%;
-        font-size: 16px;
+        margin-top: 16%;
+        font-size: 15px;
     }
     .header-text h1{
         font-size: 30px;
+    }
+    .logo{
+        font-size: 18px;
+    }
+    .img-box img{
+        /* top: 15%; */
+        /* bottom: 0; */
+        height: 85%;
     }
     nav .fas{
         display: block;
@@ -432,6 +507,9 @@ nav .fas{
     .tab-links{
         font-size: 16px;
         margin-right: 19px;
+    }
+    .project-left,.project-right{
+        flex-basis: 100%;
     }
     .contact-left,.contact-right{
         flex-basis: 100%;

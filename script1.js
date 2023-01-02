@@ -6,7 +6,7 @@ function opentab(tabname){
         tablink.classList.remove("active-link");
     }
     for(tabcontent of tabcontents){
-        tablink.classList.remove("active-tab");
+        tabcontent.classList.remove("active-tab");
     }
 
     event.currentTarget.classList.add("active-link");

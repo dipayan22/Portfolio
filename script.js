@@ -17,3 +17,10 @@ icon.onclick=function(){
         icon.src="moon.png";
     }
 }
+
+var typed=new Typed(".auto-type", {
+    strings: ["UI/UX Designer" , "Web Developer" , "Programmer"],
+    typeSpeed : 150,
+    backSpeed : 130,
+    loop : true 
+})
