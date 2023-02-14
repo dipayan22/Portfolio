@@ -2,4 +2,4 @@
 
 this is my personal portfolio 
 
-https://dipayan22.github.io/oibsip_task2
+https://dipayan22.github.io/Portfolio
