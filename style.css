@@ -52,6 +52,7 @@ body{
 nav{
     display: flex;
     align-items: center;
+    
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -82,6 +83,7 @@ nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
+    
 }
 
 nav ul li a{
@@ -124,7 +126,22 @@ nav ul li a:hover::after{
 }
 .header-text h1 span{
     color: var(--third-color);
+    /* color: transparent;
+    -webkit-text-stroke: 1px var(--primary-color);
+    background: url(back.png);
+    background-color: var(--secondary-color);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite; */
 }
+
+
+
+/* @keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+} */
 
 .img-box{
     width: 45%;
@@ -287,61 +304,87 @@ nav ul li a:hover::after{
 
 /* -------------------Projects------------------ */
 
-#projects{
-    padding: 80px 0;
-    color: var(--primary-color);
+#portfolio{
+    padding: 50px 0;
 }
 
-#projects .title{
-    font-size: 57px;
+#portfolio .sub-title{
+    font-size: 50px;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    letter-spacing: 1px;
+
 }
-#projects .title span{
+#portfolio .sub-title span{
     color: var(--third-color);
 }
-.project{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 15px 0;
-}
-.project-left{
-    flex-basis: 65%;
-    justify-content: center;
-    
-}
-.project-left a{
-    text-decoration: none;
-    font-size: 30px;
-    margin: 15px;
-    margin-left: 0;
-    color: #ababab;
-    display: inline-block;
-    transition: color 0.5s , transform 0.3s;
-}
-.project-left a:hover{
-    color: var(--third-color);
-    transform: translateY(-10px);
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
 }
 
-.project-left h1{
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-.project-left h4{
-    margin: 10px 0;
-}
-.project-right{
-    flex-basis: 30%;
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
 }
 .work img{
     width: 100%;
-    border-radius: 15px;
+    height: 460px;
+    border-radius: 10px;
+    display: block;
+    transition: transform .5s;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work a{
+    transition: transform .5s;
 }
 
 
+.work a:hover{
+    transform: translateY(-10px);
+}
 
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,.6), var(--third-color));
+    border-radius: 10px;
+    position: absolute;
+    color: #fff;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.work:hover .layer{
+    height: 100%;
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a{
+    margin-top: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 60px;
+    align-items: center;
+}
 /* ----------------contact--------------------- */
 
 .contact-left{
@@ -438,16 +481,58 @@ form .btn.btn-2{
 
 
 /* -------------------------Responsive designing --------------------------- */
-
 nav .fas{
     display: none;
 }
 
-@media only screen and (max-width : 820px){
+@media (min-width : 760px ) and (max-width : 1000px){
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: var(--third-color);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right .45s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .header-text{
+        margin-top: 16%;
+        font-size: 20px;
+    }
+    .header-text h1{
+        font-size: 45.6px;
+    }
+    .img-box img{
+        height: 86%;
+    }
+
+}
+
+@media (max-width : 760px){
     /* #header{
         background-image: url(bg008.jpg); 
 
     } */
+
+    .img-box img{
+        height: 70%;
+    }
     .back-img{
         width: 400px;
     }

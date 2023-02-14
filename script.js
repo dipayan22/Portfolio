@@ -19,7 +19,7 @@ icon.onclick=function(){
 }
 
 var typed=new Typed(".auto-type", {
-    strings: ["UI/UX Designer" , "Web Developer" , "Programmer"],
+    strings: ["UI/UX Designer" , "Web Developer" , "Programmer","Student"],
     typeSpeed : 150,
     backSpeed : 130,
     loop : true 
