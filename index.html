@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,177 +10,224 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/8189e653bb.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-   <div id="header">
-    <div class="container">
-        <nav>
-            <h1 class="logo">port<span>folio</span></h1>
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Service</a></li>
-                <li><a href="#portfolio">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fas fa-times" onclick="closemenu()"></i>
-            </ul>
-            <!-- <img src="moon.png" alt="" id="icon"> -->
-            <i class="fa-solid fa-moon" id="icon"></i>
-            <i class="fas fa-bars" onclick="openmenu()"></i>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo">port<span>folio</span></h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <!-- <img src="moon.png" alt="" id="icon"> -->
+                <i class="fa-solid fa-moon" id="icon"></i>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
 
-        </nav>
+            </nav>
 
-        <div class="header-text">
-            <p> <span class="auto-type"></span></p>
-            <h1>
-                Hi <br> I'm <span>Dipayan</span> <br> from india 
-            </h1>
-        </div>
-
-        <div class="img-box">
-            <img src="pattern.png" alt="" class="back-img">
-            <img src="Dipayan_Profile.png" alt="" class="main-img">
-        </div>
-    </div>
-   </div>
-
-   <!-- ---------------------ABOUT---------------------- -->
-
-   <div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="profile2.jpg" alt="">
+            <div class="header-text">
+                <p> <span class="auto-type"></span></p>
+                <h1>
+                    Hi <br> I'm <span>Dipayan</span> <br> from india
+                </h1>
             </div>
-            <div class="about-col-2">
-                <h1 class="subtitle">About <span>me</span></h1>
-                <p>I am a Computer Science Engineer . I'm seeking an Internship where i can apply my skills in front-end web development and increae my experience. I'm interning as a Web Developer . I specialize in topics like Web Develoment , C , C++ , Python Programming language ,new technology etc.</p>
 
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick = "opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick = "opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick = "opentab('education')">Education</p>
-                </div>
-                <div class="tab-content active-tab" id="skills">
-                    <ul>
-                        <li><span>UI/UX</span><br>Designing web interfaces</li>
-                        <li><span>Web developer</span>
-                        <li><span>python/c++ programmer</span>
-                    </ul>
-                </div>
-                <div class="tab-content" id="experience">
-                    <ul>
-                        <li><span>Dec,2022-Jan,2023</span><br>Internship in Oasis Infobyte</li>
-                        <li><span>Feb,2022-Present</span><br>Internship in Code Clause</li>
-                    </ul>
-                </div>
-                <div class="tab-content" id="education">
-                    <ul>
-                        <li> <span>2021-Present</span> <br>study B.tech in Computer science & Engineering from Dr. B. C. Roy Engineering College </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-   </div>
-
-   <!-- --------------------------------SERVICES------------------------- -->
-
-   <div id="services">
-    <div class="container">
-        <h1>my <span>servives</span></h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web design</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt perferendis rem, officiis, facere minima porro amet, repudiandae dicta ad a at nulla accusamus?</p>
-                <a href="#">learn More</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-crop-simple"></i>
-                <h2>UI/UX design</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt perferendis rem, officiis, facere minima porro amet, repudiandae dicta ad a at nulla accusamus?</p>
-                <a href="#">learn More</a>
-            </div>
-            <div>
-                <i class="fa-brands fa-python"></i>
-                <h2>Programming </h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt perferendis rem, officiis, facere minima porro amet, repudiandae dicta ad a at nulla accusamus?</p>
-                <a href="#">learn More</a>
-            </div>
-        </div>
-    </div>
-   </div>
-
-   <!-- ------------------------------Projects--------------------- -->
-
-   <div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My <span>works</span></h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="Project_11.jpg" >
-                <div class="layer">
-                    <h3>Calculator Website</h3>
-                    <p>In this website we can caculation somesimple mathemathical Problems</p>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="Project_13.jpg" >
-                <div class="layer">
-                    <h3>Digital Clock Website</h3>
-                    <p>In this website we can caculation somesimple mathemathical Problems</p>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="Project_12.jpg" >
-                <div class="layer">
-                    <h3>Temparature Converter</h3>
-                    <p>In this website we can caculation somesimple mathemathical Problems</p>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-        </div> 
-        <a href="#" class="btn">See more</a>   
-    </div>
-   </div>
-   <!-- --------------------------contact-------------------- -->
-
-   <div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1>contact <span>me</span></h1>
-                <p> <i class="fas fa-paper-plane"></i> majumderd007@gmail.com</p>
-                <p> <i class="fas fa-phone"></i> 01234556789</p>
-                <div class="social-icons">
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-                <a href="" download class="btn btn-2">Download CV</a>
-            </div>
-            <div class="contact-right"> 
-                <form action="">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your E-mail" required>
-                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn-2">summit</button>
-                </form>
+            <div class="img-box">
+                <img src="pattern.png" alt="" class="back-img">
+                <img src="Dipayan_Profile.png" alt="" class="main-img">
             </div>
         </div>
     </div>
 
-    <div class="copyright">
-        <p>Copyright &copy; <span> Dipayan Majumder </span>. All right reserved!</p>
-    </div>
-   </div>
+    <!-- ---------------------ABOUT---------------------- -->
 
-   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-   <script src="script1.js"></script>
-   <script src="script.js"></script>
-   
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="profile2.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About <span>me</span></h1>
+                    <p>I am a Computer Science Engineer . I'm seeking an Internship where i can apply my skills in
+                        Python development and increae my experience. I'm interning as a Machine learning Engineer . I
+                        specialize in topics like ML , DL , Data Vizulization , Data Analysis , Python Programming
+                        language ,new technology
+                        etc.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>Data Science</span><br>Machine learning & Deep learning</li>
+                            <li><span>Data Analysis</span>
+                            <li><span>python Programmer</span>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>Dec,2022-Jan,2023</span><br>Internship in Oasis Infobyte</li>
+                            <li><span>Feb,2022-Present</span><br>Internship in Code Clause</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li> <span>2021-Present</span> <br>study B.tech in Computer science & Engineering from Dr.
+                                B. C. Roy Engineering College </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------------SERVICES------------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1>my <span>servives</span></h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Data Analysis</h2>
+                    <p>It as a role that involves collecting, organizing, analyzing and interpreting data to produce
+                        business insights . Data analysts are responsible for a variety of tasks, including collecting
+                        data from a variety of sources, cleaning the data to remove errors or inconsistencies, ensuring
+                        data quality, organizing the data in the proper formats for analysis, analyzing the data using
+                        statistical methods to draw insights and conclusions.</p>
+                    <a href="https://www.geeksforgeeks.org/data-analysis-tutorial/" target="_blank">learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Machine learning</h2>
+                    <p>It as a field of study that involves developing and implementing algorithms and statistical
+                        models
+                        that enable computers to learn from data and make predictions or decisions without explicit
+                        instructions 12. Machine learning engineers are responsible for designing, training, and
+                        deploying these models to solve complex problems and extract insights from vast datasets </p>
+                    <a href="https://en.wikipedia.org/wiki/Machine_learning" target="_blank">learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Programming </h2>
+                    <p>it as a role that involves using Python, a high-level, interpreted, object-oriented programming
+                        language, to develop software, automate tasks, and perform data analysis 1. Python is widely
+                        used in various domains such as web development, data science, machine learning, artificial
+                        intelligence, automation, and more </p>
+                    <a href="https://www.python.org/about/gettingstarted/" target="_blank"> learn More </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------Projects--------------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My <span>works</span></h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="weather.jpg">
+                    <div class="layer">
+                        <h3>Weather App </h3>
+                        <p>The Weather App is a mobile application that provides users with up-to-date weather
+                            information for their location. The app uses real-time data to provide accurate weather
+                            forecasts, including temperature, humidity, wind speed, and precipitation</p>
+                        <a href="https://github.com/dipayan22/WeatherApp" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="music.png">
+                    <div class="layer">
+                        <h3>Music Player</h3>
+                        <p>A simple music player is an application that allows users to play music files on their devices. It is designed with a clean and intuitive interface, making it easy to use for users of all ages. The app allows users to display their music library on the device</p>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="quora.jpg">
+                    <div class="layer">
+                        <h3>Quora Question Similarity</h3>
+                        <p>The Quora Question Similarity problem is a machine learning task that involves identifying which questions asked on Quora are duplicates of questions that have already been asked . The goal is to predict whether a pair of questions are duplicates or not, based on their semantic similarity .</p>
+                        <a href="https://github.com/dipayan22/Quora_Question_Similarity" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-list">
+                <div class="work">
+                    <img src="brain_tm.jpg">
+                    <div class="layer">
+                        <h3>Brain Tumor Prediction</h3>
+                        <p>The Brain Tumor Prediction problem is a machine learning task that involves identifying the existence of brain tumors and predicting their location, size, shape, category, and grade . The most common imaging techniques used for brain scans are MRI and CT . The goal is to predict the proper treatment options for the tumor based on its characteristics</p>
+                        <a href="https://github.com/dipayan22/Brain-tumor-prediction" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="uber.jpg">
+                    <div class="layer">
+                        <h3>Uber Data Analysis</h3>
+                        <p>Uber Data Analysis is a comprehensive data analysis and machine learning endeavor aimed at improving the overall quality and efficiency of Uber’s services . This project leverages advanced data analytics and machine learning techniques to derive valuable insights, optimize driver-rider interactions, and improve customer experience</p>
+                        <a href="https://github.com/dipayan22/Uber-data-Analysis" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="new_clf.jpg">
+                    <div class="layer">
+                        <h3>New Classification</h3>
+                        <p>News Classification is a machine learning task that involves identifying the category of a news article based on its content . The goal is to assign one or more categories to a news article, such as sports, politics, entertainment, and more . News classification is a multi-label text classification problem, where a single news article can belong to multiple categories </p>
+                        <a href="https://github.com/dipayan22/News_Classification" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/dipayan22?tab=repositories" class="btn" target="_blank">See more</a>
+        </div>
+    </div>
+    <!-- --------------------------contact-------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>contact <span>me</span></h1>
+                    <p> <i class="fas fa-paper-plane"></i> majumderd007@gmail.com</p>
+                    <p> <i class="fas fa-phone"></i> 6297027995 </p>
+                    <div class="social-icons">
+                        <a href="www.facebook.com/profile.php?id=100073137603579&mibextid=kFxxJD" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/dipayan-majumder-92842a24b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="" download class="btn btn-2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your E-mail" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-2">summit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &copy; <span> Dipayan Majumder </span>. All right reserved!</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script1.js"></script>
+    <script src="script.js"></script>
+
 </body>
+
 </html>

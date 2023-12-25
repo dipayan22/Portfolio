@@ -19,8 +19,8 @@ icon.onclick=function(){
 }
 
 var typed=new Typed(".auto-type", {
-    strings: ["UI/UX Designer" , "Web Developer" , "Programmer","Student"],
-    typeSpeed : 150,
-    backSpeed : 130,
+    strings: ["Data Analyst" , "Machine Learning Engineer" , "Python developer","Student"],
+    typeSpeed : 120,
+    backSpeed : 100,
     loop : true 
 })
